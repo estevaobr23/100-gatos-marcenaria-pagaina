@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1672, initial-scale=1">
+<title>Páginas iniciais — 100 Projetos de Gatificação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#172f73;--navy-d:#091b4b;--coral:#ff5a3d;--coral-d:#c9321a;--cyan:#0ea5e9;--ink:#0b1630;--muted:#44506b;--line:#d6e0f3}
+*{box-sizing:border-box}
+html,body{margin:0;width:1672px;height:941px;overflow:hidden;background:#fff}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--ink)}
+.page{position:absolute;inset:0;width:1672px;height:941px;background:#fff;overflow:hidden;display:none}
+body[data-page="1"] #p1,body[data-page="2"] #p2,body[data-page="3"] #p3,body[data-page="4"] #p4{display:block}
+.grid-bg{position:absolute;inset:0;background:
+  linear-gradient(rgba(14,90,180,.07) 1px,transparent 1px) 0 0/120px 120px,linear-gradient(90deg,rgba(14,90,180,.07) 1px,transparent 1px) 0 0/120px 120px,
+  linear-gradient(rgba(14,90,180,.04) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,rgba(14,90,180,.04) 1px,transparent 1px) 0 0/24px 24px}
+.page-head{position:absolute;left:46px;right:46px;top:26px;height:104px;display:flex;align-items:center;border-bottom:5px solid var(--cyan);z-index:2}
+.page-head .num{font:900 84px/.9 Montserrat;color:var(--coral);letter-spacing:-2px}
+.page-head .bar{width:5px;height:70px;background:var(--cyan);margin:0 28px;transform:skewX(-9deg)}
+.page-head h1{margin:0;font:italic 900 56px/1 Montserrat;text-transform:uppercase;letter-spacing:-1px;color:var(--navy-d)}
+.dot{width:22px;height:22px;background:var(--coral);border-radius:50%;flex:none}
+.il{display:block;width:100%;height:100%}
+
+/* CAPA */
+#p1{background:radial-gradient(900px 520px at 0% 0%,rgba(14,165,233,.16),transparent 62%),radial-gradient(760px 480px at 100% 100%,rgba(255,90,61,.14),transparent 62%),#fff}
+.cv-head{position:absolute;left:60px;right:60px;top:40px;z-index:2}
+.cv-kicker{display:flex;align-items:center;gap:16px;font:700 19px/1 Montserrat;letter-spacing:5px;text-transform:uppercase;color:#43506b}
+.cv-kicker::before{content:"";width:44px;height:5px;background:var(--coral)}
+.cv-main{display:flex;align-items:center;margin-top:22px}
+.cv-no{font:900 232px/.8 Montserrat;color:var(--coral);letter-spacing:-12px;position:relative}
+.cv-no::after{content:"PROJETOS";position:absolute;left:12px;bottom:-34px;font:800 19px/1 Montserrat;letter-spacing:8px;color:var(--navy)}
+.cv-div{width:6px;height:178px;background:var(--cyan);margin:0 40px 0 44px;transform:skewX(-9deg)}
+.cv-title{text-transform:uppercase;color:var(--navy-d);letter-spacing:-2px}
+.cv-title .a{display:block;font-size:34px;font-weight:700;letter-spacing:8px;margin-bottom:6px}
+.cv-title .b{display:block;font-size:108px;font-weight:900;line-height:.92;letter-spacing:-4px}
+.cv-title .c{display:inline-block;font-size:44px;font-weight:800;line-height:1;color:#fff;background:var(--navy-d);padding:8px 22px 12px;margin-top:12px;transform:skewX(-7deg);letter-spacing:-1px}
+.cv-sub{position:absolute;right:0;top:6px;width:400px;border-top:4px solid var(--cyan);padding-top:14px;font:700 17px/1.5 Montserrat;text-transform:uppercase;letter-spacing:1.4px;color:#2c3956;text-align:right}
+.cv-meta{display:flex;gap:30px;margin-top:46px;font:700 16px/1 Montserrat;text-transform:uppercase;letter-spacing:1.4px;color:#2c3956}
+.cv-meta span{display:flex;align-items:center;gap:10px}.cv-meta i{width:12px;height:12px;border-radius:50%;background:var(--coral);display:block}
+.cv-stage{position:absolute;left:56px;right:56px;top:410px;height:450px;display:flex;gap:22px;align-items:center;z-index:1}
+.cv-stage div{flex:1;aspect-ratio:4/5;filter:drop-shadow(0 18px 18px rgba(23,47,115,.18));border-radius:14px;overflow:hidden;background:#fff}
+.cv-stage div:nth-child(odd){transform:translateY(-18px)}.cv-stage div:nth-child(even){transform:translateY(18px)}
+.cv-foot{position:absolute;left:46px;right:46px;bottom:0;height:78px;border-top:3px solid var(--cyan);display:grid;grid-template-columns:repeat(3,1fr);background:#fff;z-index:3}
+.cv-foot div{display:flex;align-items:center;gap:14px;padding:0 28px;font:800 22px/1 Montserrat;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy-d)}
+.cv-foot div+div{border-left:2px solid var(--cyan)}
+
+/* COMO USAR */
+.steps{position:absolute;left:46px;right:46px;top:166px;height:640px;display:grid;grid-template-columns:repeat(6,1fr)}
+.step{padding:0 20px;display:flex;flex-direction:column;align-items:flex-start}
+.step+.step{border-left:2px solid var(--line)}
+.step-icon{width:100%;height:250px;display:grid;place-items:center;margin-bottom:14px}
+.step-icon svg{width:228px;height:200px;overflow:visible}
+.step-number{font:900 76px/.9 Montserrat;color:var(--coral);margin-bottom:10px;letter-spacing:-3px}
+.step h2{font:italic 900 30px/1.05 Montserrat;text-transform:uppercase;margin:0 0 16px;color:var(--navy-d);letter-spacing:-.5px}
+.step p{font:500 19px/1.5 Montserrat;color:#37425e;margin:0}
+.warning{position:absolute;left:46px;right:46px;bottom:34px;height:84px;border-top:3px solid var(--cyan);border-bottom:3px solid var(--cyan);display:flex;align-items:center;gap:18px;padding:0 20px;background:#fff}
+.warning strong{font:800 20px/1.3 Montserrat;letter-spacing:.3px;text-transform:uppercase;color:var(--navy-d)}
+.s-k{fill:none;stroke:#0b1630;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.s-c{fill:none;stroke:var(--cyan);stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.f-o{fill:var(--coral)}.f-w{fill:#fff}
+
+/* COMO LER */
+.sheet{position:absolute;left:391px;top:176px;width:890px;height:540px;border:2px solid #c6d2ea;background:#fff;box-shadow:0 14px 34px rgba(23,47,115,.14);border-radius:6px;overflow:hidden}
+.sheet .b{position:absolute;border:2px dashed #9db0d6;background:rgba(14,165,233,.05);border-radius:6px;display:flex;align-items:center;justify-content:center;text-align:center;font:700 13px/1.3 Montserrat;color:#55627f;text-transform:uppercase;letter-spacing:.6px}
+.pin{position:absolute;width:40px;height:40px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font:900 22px/1 Montserrat;box-shadow:0 0 0 5px #fff,0 0 0 7px var(--cyan);z-index:3}
+.callout{position:absolute;width:318px;color:#242424}
+.callout .line{height:3px;background:var(--cyan);position:absolute;top:20px;width:72px}
+.callout.left .line{right:-78px}.callout.right .line{left:-78px}
+.callout-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.callout-num{width:40px;height:40px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font:900 22px/1 Montserrat;flex:none}
+.callout h2{margin:0;font:italic 900 22px/1.05 Montserrat;text-transform:uppercase;color:var(--navy-d)}
+.callout p{margin:0 0 0 52px;font:500 16px/1.4 Montserrat;color:#44506b}
+.read-footer{position:absolute;left:391px;top:760px;width:890px;border-top:3px solid var(--cyan);padding-top:14px;text-align:center;font:700 16px/1.4 Montserrat;color:#44506b;text-transform:uppercase;letter-spacing:.4px}
+
+/* ÍNDICE */
+.index-grid{position:absolute;left:46px;right:46px;top:156px;bottom:34px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr)}
+.index-cell{display:flex;flex-direction:column;align-items:flex-start;padding:22px 26px;min-width:0}
+.index-cell:not(:nth-child(4n)){border-right:2px solid var(--line)}
+.index-cell:nth-child(-n+4){border-bottom:2px solid var(--line)}
+.index-cell .art{width:178px;height:222px;margin-bottom:14px;filter:drop-shadow(0 10px 10px rgba(23,47,115,.14))}
+.index-cell h2{margin:0 0 8px;font:italic 900 25px/1.05 Montserrat;text-transform:uppercase;color:var(--navy-d);letter-spacing:-.4px}
+.index-cell strong{display:block;color:var(--coral);font:800 17px/1.2 Montserrat;text-transform:uppercase;letter-spacing:.5px}
+.index-cell small{display:block;margin-top:5px;font:600 15px/1.2 Montserrat;color:#44506b}
+</style>
+<style>{{ILU_CSS}}</style>
+</head>
+<body data-page="1">
+{{SPRITE}}
+
+<main class="page" id="p1">
+  <div class="grid-bg"></div>
+  <header class="cv-head">
+    <div class="cv-kicker">Biblioteca digital para marceneiros</div>
+    <div class="cv-main">
+      <div class="cv-no">100</div><span class="cv-div"></span>
+      <h1 class="cv-title" style="margin:0"><span class="a">Projetos de</span><span class="b">Gatificação</span><span class="c">para fabricar e vender</span></h1>
+    </div>
+    <p class="cv-sub">Uma nova linha de móveis para gatos para fabricar e vender na sua marcenaria.</p>
+    <div class="cv-meta"><span><i></i>Fichas ilustradas</span><span><i></i>Prateleiras, pontes, nichos e torres</span><span><i></i>Circuitos e ambientes completos</span></div>
+  </header>
+  <div class="cv-stage" aria-hidden="true">
+    <div><svg class="il" viewBox="0 0 240 300"><use href="#ill-prateleiras"/></svg></div>
+    <div><svg class="il" viewBox="0 0 240 300"><use href="#ill-pontes"/></svg></div>
+    <div><svg class="il" viewBox="0 0 240 300"><use href="#ill-nichos"/></svg></div>
+    <div><svg class="il" viewBox="0 0 240 300"><use href="#ill-torres"/></svg></div>
+    <div><svg class="il" viewBox="0 0 240 300"><use href="#ill-modulares"/></svg></div>
+    <div><svg class="il" viewBox="0 0 240 300"><use href="#ill-decoracao"/></svg></div>
+  </div>
+  <footer class="cv-foot"><div><span class="dot"></span>100 modelos</div><div><span class="dot"></span>8 categorias</div><div><span class="dot"></span>Acesso digital</div></footer>
+</main>
+
+<main class="page" id="p2">
+  <div class="grid-bg"></div>
+  <header class="page-head"><span class="num">01</span><span class="bar"></span><h1>Como usar esta biblioteca</h1></header>
+  <section class="steps">
+    <article class="step">
+      <div class="step-icon"><svg viewBox="0 0 200 170"><rect class="f-w s-k" x="20" y="60" width="110" height="84" rx="3"/><rect class="f-w s-k" x="40" y="40" width="110" height="84" rx="3"/><rect class="f-w s-k" x="60" y="20" width="110" height="84" rx="3"/><path class="s-c" d="M76 60h70M76 76h46"/><circle class="f-o" cx="80" cy="96" r="10"/></svg></div>
+      <div class="step-number">01</div><h2>Escolha o projeto</h2>
+      <p>Navegue pelas 8 categorias e separe o móvel que combina com o seu cliente.</p>
+    </article>
+    <article class="step">
+      <div class="step-icon"><svg viewBox="0 0 200 170"><rect class="f-w s-k" x="40" y="14" width="120" height="142" rx="4"/><path class="s-c" d="M62 118h76M62 134h50"/><rect class="f-o" x="62" y="96" width="76" height="9" rx="2"/><path class="s-k" d="M70 105v-14l24 14M130 105v-14l-24 14M62 52h76M62 70h46"/></svg></div>
+      <div class="step-number">02</div><h2>Estude a ficha</h2>
+      <p>Veja o móvel pronto, as peças e a montagem de referência de cada modelo.</p>
+    </article>
+    <article class="step">
+      <div class="step-icon"><svg viewBox="0 0 200 170"><path class="f-w s-k" d="M100 14l62 22v46c0 38-28 62-62 76-34-14-62-38-62-76V36z"/><path d="M70 86l22 22 40-46" fill="none" stroke="#ff5a3d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="step-number">03</div><h2>Confira e valide</h2>
+      <p>Parede, fixação e carga são conferidas no local e por profissional habilitado.</p>
+    </article>
+    <article class="step">
+      <div class="step-icon"><svg viewBox="0 0 200 170"><rect class="f-w s-k" x="44" y="14" width="112" height="142" rx="6"/><rect class="f-w s-k" x="62" y="30" width="76" height="30" rx="3"/><path class="s-k" d="M70 84h6M94 84h6M118 84h6M70 106h6M94 106h6M118 106h6M70 128h6M94 128h6"/><rect class="f-o" x="116" y="118" width="22" height="26" rx="4"/></svg></div>
+      <div class="step-number">04</div><h2>Monte o orçamento</h2>
+      <p>Levante os materiais, some a mão de obra e defina o seu preço.</p>
+    </article>
+    <article class="step">
+      <div class="step-icon"><svg viewBox="0 0 200 170"><rect class="f-w s-k" x="20" y="96" width="160" height="26" rx="3"/><path class="s-c" d="M36 109h128"/><circle class="f-o" cx="54" cy="109" r="7"/><circle class="f-o" cx="100" cy="109" r="7"/><circle class="f-o" cx="146" cy="109" r="7"/><path class="s-k" d="M60 80l28-52 20 12-18 40zM108 40l36-18 10 20-36 20"/></svg></div>
+      <div class="step-number">05</div><h2>Fabrique</h2>
+      <p>Corte, monte e acabe na sua marcenaria, com a madeira e o MDF que você já usa.</p>
+    </article>
+    <article class="step">
+      <div class="step-icon"><svg viewBox="0 0 200 170"><path class="f-w s-k" d="M20 22h160v106H92l-46 32 8-32H20z" stroke-linejoin="round"/><rect class="f-o" x="60" y="54" width="80" height="36" rx="6"/><path d="M76 72h48" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg></div>
+      <div class="step-number">06</div><h2>Ofereça e venda</h2>
+      <p>Mostre o modelo ao cliente e feche a encomenda.</p>
+    </article>
+  </section>
+  <footer class="warning"><span class="dot"></span><strong>Móvel fixado na parede exige conferir a parede, a fixação e a carga antes de fabricar e instalar.</strong></footer>
+</main>
+
+<main class="page" id="p3">
+  <div class="grid-bg"></div>
+  <header class="page-head"><span class="num">02</span><span class="bar"></span><h1>Como ler uma ficha</h1></header>
+  <figure class="sheet" style="margin:0" aria-label="Esquema da ficha de um projeto">
+    <div class="b" style="left:18px;top:18px;width:380px;height:300px;padding:0;background:#fff"><svg class="il" viewBox="0 0 240 300" preserveAspectRatio="xMidYMid meet" style="padding:6px"><use href="#ill-pontes"/></svg></div>
+    <div class="b" style="left:416px;top:18px;width:456px;height:70px">Nome do projeto · categoria · finalidade</div>
+    <div class="b" style="left:416px;top:100px;width:456px;height:150px">Vistas: frontal · lateral · superior</div>
+    <div class="b" style="left:18px;top:330px;width:380px;height:192px">Peças identificadas e visão explodida</div>
+    <div class="b" style="left:416px;top:262px;width:456px;height:120px">Montagem em etapas</div>
+    <div class="b" style="left:416px;top:394px;width:456px;height:128px">Materiais · acabamento · instalação</div>
+  </figure>
+  <span class="pin" style="left:371px;top:324px">1</span><span class="pin" style="left:1261px;top:209px">2</span><span class="pin" style="left:1261px;top:331px">3</span><span class="pin" style="left:371px;top:582px">4</span><span class="pin" style="left:1261px;top:478px">5</span><span class="pin" style="left:1261px;top:614px">6</span>
+  <aside class="callout left" style="left:40px;top:302px"><span class="line"></span><div class="callout-head"><span class="callout-num">1</span><h2>O móvel pronto</h2></div><p>Imagem do projeto acabado, instalado.</p></aside>
+  <aside class="callout right" style="right:36px;top:187px"><span class="line"></span><div class="callout-head"><span class="callout-num">2</span><h2>Nome e finalidade</h2></div><p>Para que serve e em que categoria está.</p></aside>
+  <aside class="callout right" style="right:36px;top:309px"><span class="line"></span><div class="callout-head"><span class="callout-num">3</span><h2>Vistas</h2></div><p>O móvel visto de frente, de lado e de cima.</p></aside>
+  <aside class="callout left" style="left:40px;top:560px"><span class="line"></span><div class="callout-head"><span class="callout-num">4</span><h2>Peças e visão explodida</h2></div><p>Cada peça identificada.</p></aside>
+  <aside class="callout right" style="right:36px;top:456px"><span class="line"></span><div class="callout-head"><span class="callout-num">5</span><h2>Montagem</h2></div><p>A ordem de referência para montar.</p></aside>
+  <aside class="callout right" style="right:36px;top:592px"><span class="line"></span><div class="callout-head"><span class="callout-num">6</span><h2>Material e instalação</h2></div><p>Acabamento e pontos de atenção na parede.</p></aside>
+  <footer class="read-footer">Esquema do formato da ficha. Cada projeto organiza o essencial para você entender o modelo antes de validar e fabricar.</footer>
+</main>
+
+<main class="page" id="p4">
+  <div class="grid-bg"></div>
+  <header class="page-head"><span class="num">03</span><span class="bar"></span><h1>Índice dos 100 projetos</h1></header>
+  <section class="index-grid">
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-prateleiras"/></svg></div><h2>Prateleiras para gatos</h2><strong>Projetos 001 a 014</strong><small>14 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-pontes"/></svg></div><h2>Passarelas e pontes</h2><strong>Projetos 015 a 026</strong><small>12 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-nichos"/></svg></div><h2>Nichos e casinhas suspensas</h2><strong>Projetos 027 a 040</strong><small>14 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-torres"/></svg></div><h2>Torres e estruturas verticais</h2><strong>Projetos 041 a 052</strong><small>12 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-circuitos"/></svg></div><h2>Circuitos de gatificação</h2><strong>Projetos 053 a 066</strong><small>14 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-modulares"/></svg></div><h2>Móveis modulares</h2><strong>Projetos 067 a 080</strong><small>14 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-apto"/></svg></div><h2>Apartamentos pequenos</h2><strong>Projetos 081 a 090</strong><small>10 modelos</small></article>
+    <article class="index-cell"><div class="art"><svg class="il" viewBox="0 0 240 300"><use href="#ill-decoracao"/></svg></div><h2>Integrados à decoração</h2><strong>Projetos 091 a 100</strong><small>10 modelos</small></article>
+  </section>
+</main>
+<script>document.body.dataset.page=new URLSearchParams(location.search).get('page')||'1';</script>
+</body>
+</html>

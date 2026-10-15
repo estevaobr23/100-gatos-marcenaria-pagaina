@@ -1,0 +1,20 @@
+/* ILUSTRAÇÕES CONCEITUAIS (SVG) — tangibilizam as categorias; não são documentação técnica */
+.il-wall{fill:#e8f0ff;stroke:#c8d6f2;stroke-width:2}
+.il-wall2{fill:#d6e3fb;stroke:#c1d1ef;stroke-width:2}
+.il-wood{fill:#e0903f;stroke:#4a2a0e;stroke-width:3;stroke-linejoin:round}
+.il-woodd{fill:#a85f1e;stroke:#4a2a0e;stroke-width:3;stroke-linejoin:round}
+.il-dark{fill:#2a1c12;stroke:#4a2a0e;stroke-width:2}
+.il-metal{fill:#3c4a66;stroke:#1d2740;stroke-width:2}
+.il-sisal{fill:#c9a867;stroke:#7a5a22;stroke-width:2}
+.il-plank{fill:none;stroke:#a85f1e;stroke-width:16;stroke-linecap:butt}
+.il-plank2{fill:none;stroke:#fff3dc;stroke-width:2.4;stroke-dasharray:2 10}
+.il-rope{fill:none;stroke:#4a2a0e;stroke-width:3;stroke-linecap:round}
+.il-trail{fill:none;stroke:#ff5a3d;stroke-width:4;stroke-dasharray:3 9;stroke-linecap:round}
+.il-win{fill:#bfe6ff;stroke:#5b86b8;stroke-width:3}
+.il-winl{fill:none;stroke:#5b86b8;stroke-width:3}
+.il-frame{fill:#fff;stroke:#a85f1e;stroke-width:10}
+.il-leaf{fill:#2fae5c;stroke:#17703a;stroke-width:2}
+.b1{fill:#ff5a3d}.b2{fill:#0ea5e9}.b3{fill:#ffc928}
+.cat-f{fill:#1a2338}
+.cat-l{fill:none;stroke:#1a2338;stroke-width:5;stroke-linecap:round}
+.il{display:block;width:100%;height:100%}

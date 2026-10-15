@@ -1,0 +1,91 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- gato sentado (silhueta) -->
+    <symbol id="cat-sit" viewBox="0 0 60 70">
+      <path class="cat-f" d="M12 68C3 54 8 34 24 29h12c16 5 21 25 12 39z"/>
+      <circle class="cat-f" cx="30" cy="21" r="12"/>
+      <path class="cat-f" d="M20 14L22 1l9 8zM40 14L38 1l-9 8z"/>
+      <path class="cat-l" d="M49 66c13-3 13-20 5-26"/>
+    </symbol>
+
+    <!-- 01 PRATELEIRAS -->
+    <symbol id="ill-prateleiras" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <g class="il-wood"><rect x="26" y="236" width="96" height="13" rx="2"/><rect x="112" y="176" width="100" height="13" rx="2"/><rect x="26" y="116" width="96" height="13" rx="2"/><rect x="112" y="56" width="100" height="13" rx="2"/></g>
+      <g class="il-metal"><path d="M44 249v22l30-22zM132 189v22l30-22zM44 129v22l30-22zM132 69v22l30-22z"/></g>
+      <use href="#cat-sit" x="146" y="127" width="42" height="49"/>
+    </symbol>
+
+    <!-- 02 PASSARELAS E PONTES -->
+    <symbol id="ill-pontes" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <rect class="il-woodd" x="24" y="120" width="20" height="92" rx="3"/><rect class="il-woodd" x="196" y="120" width="20" height="92" rx="3"/>
+      <path class="il-plank" d="M44 168Q120 222 196 168"/>
+      <path class="il-plank2" d="M44 168Q120 222 196 168"/>
+      <path class="il-rope" d="M44 146Q120 200 196 146"/>
+      <path class="il-rope" d="M70 154v18M96 168v20M120 173v20M144 168v20M170 154v18"/>
+      <use href="#cat-sit" x="98" y="130" width="42" height="49"/>
+    </symbol>
+
+    <!-- 03 NICHOS E CASINHAS -->
+    <symbol id="ill-nichos" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <polygon class="il-wood" points="120,34 176,66 176,130 120,162 64,130 64,66"/>
+      <polygon class="il-dark" points="120,52 160,75 160,121 120,144 80,121 80,75"/>
+      <circle class="il-wood" cx="68" cy="232" r="34"/><circle class="il-dark" cx="68" cy="232" r="24"/>
+      <path class="il-woodd" d="M146 214l32-26 32 26z"/><rect class="il-wood" x="150" y="214" width="56" height="56" rx="3"/>
+      <path class="il-dark" d="M164 270v-26a14 14 0 0 1 28 0v26z"/>
+      <use href="#cat-sit" x="104" y="116" width="32" height="38" opacity=".95"/>
+    </symbol>
+
+    <!-- 04 TORRES E ESTRUTURAS VERTICAIS -->
+    <symbol id="ill-torres" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <rect class="il-metal" x="46" y="270" width="148" height="8" rx="2"/><rect class="il-metal" x="46" y="20" width="148" height="8" rx="2"/>
+      <rect class="il-sisal" x="112" y="28" width="16" height="242"/>
+      <g class="il-wood"><rect x="52" y="226" width="76" height="11" rx="2"/><rect x="112" y="178" width="80" height="11" rx="2"/><rect x="52" y="130" width="76" height="11" rx="2"/><rect x="112" y="82" width="80" height="11" rx="2"/></g>
+      <use href="#cat-sit" x="146" y="34" width="42" height="49"/>
+    </symbol>
+
+    <!-- 05 CIRCUITOS -->
+    <symbol id="ill-circuitos" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <path class="il-trail" d="M44 246L96 214 128 190 160 132 112 96 176 58"/>
+      <g class="il-wood"><rect x="22" y="244" width="62" height="11" rx="2"/><rect x="88" y="120" width="48" height="11" rx="2"/><rect x="154" y="190" width="62" height="11" rx="2"/><rect x="156" y="62" width="64" height="11" rx="2"/></g>
+      <path class="il-plank" d="M70 214Q106 232 142 206" style="stroke-width:9"/>
+      <polygon class="il-wood" points="176,100 198,113 198,139 176,152 154,139 154,113"/><polygon class="il-dark" points="176,111 190,119 190,133 176,141 162,133 162,119"/>
+      <use href="#cat-sit" x="22" y="196" width="36" height="42"/>
+      <use href="#cat-sit" x="162" y="14" width="34" height="40"/>
+    </symbol>
+
+    <!-- 06 MODULARES -->
+    <symbol id="ill-modulares" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <g stroke-linejoin="round"><polygon class="il-wood" points="90.0,67.0 118.6,83.5 118.6,116.5 90.0,133.0 61.4,116.5 61.4,83.5"/><polygon class="il-dark" points="90.0,77.6 109.4,88.8 109.4,111.2 90.0,122.4 70.6,111.2 70.6,88.8"/><polygon class="il-woodd" points="149.2,67.0 177.7,83.5 177.7,116.5 149.2,133.0 120.6,116.5 120.6,83.5"/><polygon class="il-woodd" points="60.4,118.5 89.0,135.0 89.0,168.0 60.4,184.5 31.8,168.0 31.8,135.0"/><polygon class="il-wood" points="119.6,118.5 148.2,135.0 148.2,168.0 119.6,184.5 91.0,168.0 91.0,135.0"/><polygon class="il-dark" points="119.6,129.1 139.0,140.3 139.0,162.7 119.6,173.9 100.1,162.7 100.1,140.3"/><polygon class="il-wood" points="178.7,118.5 207.3,135.0 207.3,168.0 178.7,184.5 150.2,168.0 150.2,135.0"/><polygon class="il-wood" points="90.0,170.0 118.6,186.5 118.6,219.5 90.0,236.0 61.4,219.5 61.4,186.5"/><polygon class="il-woodd" points="149.2,170.0 177.7,186.5 177.7,219.5 149.2,236.0 120.6,219.5 120.6,186.5"/><polygon class="il-dark" points="149.2,180.6 168.6,191.8 168.6,214.2 149.2,225.4 129.7,214.2 129.7,191.8"/></g>
+    </symbol>
+
+    <!-- 07 APARTAMENTO PEQUENO -->
+    <symbol id="ill-apto" viewBox="0 0 240 300">
+      <polygon class="il-wall" points="10,22 120,44 120,268 10,290"/>
+      <polygon class="il-wall2" points="120,44 230,22 230,290 120,268"/>
+      <rect class="il-win" x="146" y="70" width="64" height="104" rx="3"/><path class="il-winl" d="M178 70v104M146 122h64"/>
+      <g class="il-wood">
+        <path d="M120 232l-44-12 44-12 44 12z"/><path d="M120 176l-40-11 40-11 40 11z"/>
+      </g>
+      <g class="il-woodd"><path d="M76 220l44 12v6l-44-12zM164 220l-44 12v6l44-12z"/><path d="M80 165l40 11v5l-40-11zM160 165l-40 11v5l40-11z"/></g>
+      <use href="#cat-sit" x="99" y="106" width="42" height="49"/>
+    </symbol>
+
+    <!-- 08 INTEGRADOS À DECORAÇÃO -->
+    <symbol id="ill-decoracao" viewBox="0 0 240 300">
+      <rect class="il-wall" x="8" y="8" width="224" height="284" rx="12"/>
+      <rect class="il-frame" x="34" y="44" width="172" height="230" rx="4"/>
+      <path class="il-woodd" d="M34 112h172M34 190h172M120 112v78"/>
+      <circle class="il-dark" cx="77" cy="152" r="26"/>
+      <g><rect class="b1" x="140" y="148" width="8" height="40"/><rect class="b2" x="150" y="156" width="8" height="32"/><rect class="b3" x="160" y="146" width="8" height="42"/><rect class="b1" x="170" y="154" width="8" height="34"/></g>
+      <path class="il-leaf" d="M70 112c-10-26 6-38 14-44 4 18 0 32-14 44zM84 112c-4-24 12-34 24-34-2 18-10 28-24 34z"/>
+      <use href="#cat-sit" x="140" y="64" width="38" height="44"/>
+      <rect class="il-wood" x="60" y="230" width="120" height="14" rx="2"/>
+    </symbol>
+  </defs>
+</svg>
